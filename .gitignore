@@ -1,0 +1,53 @@
+# ---- Java ----
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# ---- Maven ----
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+dependency-reduced-pom.xml
+
+# ---- IntelliJ IDEA ----
+.idea/
+*.iml
+*.iws
+out/
+
+# ---- Eclipse (if someone opens in Eclipse) ----
+.project
+.classpath
+.settings/
+bin/
+
+# ---- OS Specific ----
+.DS_Store
+Thumbs.db
+
+# ---- Logs & temp ----
+*.log
+logs/
+*.tmp
+*.swp
+*.swo
+
+# ---- Spring Boot specific ----
+# application-local.yml might contain secrets
+application-local.yml
+
+# ---- Test reports ----
+surefire-reports/
+failsafe-reports/
+
+# ---- Coverage ----
+jacoco.exec
+.coverage
+*.lcov
+
+# ---- Others ----
+# Ignore build tool wrappers except the jar
+.gradle/
+build/
