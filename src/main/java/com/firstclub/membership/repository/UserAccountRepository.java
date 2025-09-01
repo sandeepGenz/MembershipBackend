@@ -1,4 +1,10 @@
 package com.firstclub.membership.repository;
 
-public class UserAccountRepository {
+import com.firstclub.membership.model.UserAccount;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface UserAccountRepository extends JpaRepository<UserAccount, Long> {
+    Optional<UserAccount> findByExternalUserId(String externalUserId);
 }

@@ -1,4 +1,5 @@
 package com.firstclub.membership.model;
 
-public class SubscriptionStatus {
+public enum SubscriptionStatus {
+    ACTIVE, CANCELED, EXPIRED
 }
